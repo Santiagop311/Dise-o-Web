@@ -6,30 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="estilos.css">
-    <style>
-        /* Oculta todas las secciones, excepto la primera por defecto */
-        main section {
-            display: none;
-        }
-
-        /* Muestra solo la sección que tiene la clase activa */
-        main section.active {
-            display: block;
-        }
-    </style>
-    <script>
-        // Función para cambiar la clase activa al hacer clic en un enlace del menú
-        function toggleSection(sectionId) {
-            // Oculta todas las secciones
-            var sections = document.querySelectorAll('main section');
-            sections.forEach(function (section) {
-                section.classList.remove('active');
-            });
-            // Muestra solo la sección correspondiente al ID dado
-            var section = document.getElementById(sectionId);
-            section.classList.add('active');
-        }
-    </script>
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -51,6 +28,7 @@
                     <h2>Bienvenido a ParaOlimpicos</h2>
                     <p>¡Bienvenido a ParaOlimpicos! Somos una comunidad apasionada por el deporte inclusivo y la celebración del espíritu humano. Explora nuestras secciones para descubrir más sobre quiénes somos, nuestras competencias y cómo puedes visitarnos.</p>
                 </div>
+               
             </section>
 
             <section id="quienes-somos">
@@ -60,6 +38,7 @@
                     <p>Los Paraolímpicos incluyen una amplia gama de deportes, desde atletismo y natación hasta esquí alpino y baloncesto en silla de ruedas. Los atletas paraolímpicos demuestran habilidades sobresalientes y superan desafíos extraordinarios para competir en este escenario global.</p>
                     <p>Los Juegos Paralímpicos tienen como objetivo promover la inclusión, la igualdad y el respeto por la diversidad, celebrando el potencial humano en todas sus formas.</p>
                 </div>
+               
             </section>
 
             <section id="competencias">
@@ -76,7 +55,7 @@
                 </div>
             </section>
 
-            <!-- Las otras secciones continúan aquí -->
+     
 
         </main>
     </div>
@@ -88,6 +67,10 @@
             <a href="#">Twitter</a>
             <a href="#">Facebook</a>
             <a href="#">LinkedIn</a>
+        </div>
+        <div class="nuestrasofertas">
+            <img src="./img/para.png" alt="">
+
         </div>
     </footer>
 </body>

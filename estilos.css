@@ -1,3 +1,21 @@
+body,
+html{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+main section {
+    display: none;
+}
+
+
+main section.active {
+    display: block;
+}
+
+.main-container {
+min-height: 100%;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -35,22 +53,22 @@ nav ul li a:hover {
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar los elementos */
+    justify-content: center; 
     gap: 20px;
     padding: 20px;
 }
 .content h2 {
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 10px; /* Espacio inferior entre el título y la imagen */
-    font-size: 24px; /* Tamaño de fuente */
-    color: #60593c; /* Color del texto */
+    text-align: center; 
+    margin-bottom: 10px; 
+    font-size: 24px; 
+    color: #60593c; 
 }
 
 
 main {
-    max-width: calc(33.33% - 20px); /* Ancho máximo para tres elementos por fila */
+    max-width: calc(33.33% - 20px); 
     box-sizing: border-box;
-    margin-bottom: 20px; /* Espacio entre los elementos */
+    margin-bottom: 20px; 
 }
 
 .content {
@@ -65,7 +83,7 @@ main {
 
 .content img {
     width: 100%;
-    max-width: 200px; /* Reducir el ancho máximo de la imagen */
+    max-width: 200px; 
     height: auto;
     margin-bottom: 20px;
 }
@@ -110,4 +128,12 @@ footer {
 
 .redes-sociales a:hover {
     color: #fffefe;
+}
+.nuestrasofertas img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    margin-bottom: 20px; 
+    margin-right: 20px;
 }
