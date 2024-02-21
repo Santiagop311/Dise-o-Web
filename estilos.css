@@ -4,6 +4,7 @@ height: 100%;
 margin: 0;
 padding: 0;
 }
+
 main section {
     display: none;
 }
@@ -15,6 +16,7 @@ main section.active {
 
 .main-container {
 min-height: 100%;
+
 }
 body {
     font-family: Arial, sans-serif;
@@ -56,12 +58,14 @@ nav ul li a:hover {
     justify-content: center; 
     gap: 20px;
     padding: 20px;
+
 }
 .content h2 {
     text-align: center; 
     margin-bottom: 10px; 
     font-size: 24px; 
     color: #60593c; 
+    
 }
 
 
@@ -78,7 +82,8 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color: #eef0f1;
+    
 }
 
 .content img {
@@ -116,6 +121,7 @@ footer {
 
 .redes-sociales {
     margin-top: 20px;
+    
 }
 
 .redes-sociales a {
@@ -136,4 +142,47 @@ footer {
     height: 50px;
     margin-bottom: 20px; 
     margin-right: 20px;
+}
+.entretener {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonials,
+.stats,
+.carousel,
+.videos {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.testimonials,
+.stats {
+    flex-basis: calc(30% - 10px);
+}
+
+.carousel {
+    flex-basis: 40%;
+}
+
+.videos {
+    flex-basis: 100%;
+    display: inline-block;
+    
+}
+.entretenimiento{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #eef0f1;
+    
+}
+.entretenimiento img{
+    height: 200px;
+    
+    
 }
