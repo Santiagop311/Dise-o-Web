@@ -7,24 +7,25 @@
     <title>Test</title>
     <link rel="stylesheet" href="estilos.css">
     <style>
-
+        /* Oculta todas las secciones, excepto la primera por defecto */
         main section {
             display: none;
         }
 
+        /* Muestra solo la sección que tiene la clase activa */
         main section.active {
             display: block;
         }
     </style>
     <script>
-      
+        // Función para cambiar la clase activa al hacer clic en un enlace del menú
         function toggleSection(sectionId) {
-       
+            // Oculta todas las secciones
             var sections = document.querySelectorAll('main section');
             sections.forEach(function (section) {
                 section.classList.remove('active');
             });
-   
+            // Muestra solo la sección correspondiente al ID dado
             var section = document.getElementById(sectionId);
             section.classList.add('active');
         }
@@ -61,6 +62,21 @@
                 </div>
             </section>
 
+            <section id="competencias">
+                <div class="content">
+                    <h2>Nuestras Competencias</h2>
+                    <p>Texto sobre nuestras competencias.</p>
+                </div>
+            </section>
+
+            <section id="visitanos">
+                <div class="content">
+                    <h2>Visítanos</h2>
+                    <p>Texto sobre cómo visitarnos.</p>
+                </div>
+            </section>
+
+            <!-- Las otras secciones continúan aquí -->
 
         </main>
     </div>
