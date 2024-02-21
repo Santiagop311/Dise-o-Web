@@ -1,54 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./asst/css/style.css">
-    
-</head>
-<body>
-   <div id="nombreEmpresa">
-      <div id="nomEmpresa">
-        <h1>Empresa Kitcol</h1>
-      </div>
-      <div id="enlacesEmpresa">
-        <ul>
-            <li><a href="http://">nuestro trabajo</a></li>
-            <li><a href="http://">ayudanos</a></li>
-            <li><a href="http://">nuetra tienda</a></li>
-        </ul>
+    <title>Test</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
 
+        main section {
+            display: none;
+        }
 
-
-      </div>
-      <!-- imagen de la empresa -->
-   </div>
-     <div id="contenedoredesociales">
-        <div id="Facebook">facebook</div>
-        <div id="Twiter">twiter</div>
-        <div id="Instagram">instagram</div>
-     </div> 
-     <div id="parrafo" class="container">
-      <img src="./asst/img/jujutsu.png" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, a unde maiores sapiente possimus, <br>consequatur laborum placeat laboriosam vel architecto velit rerum inventore dolores voluptas nihil neque excepturi harum enim!
-        Natus voluptatem soluta, iusto ratione exercitationem reiciendis est maxime. Sapiente provident maxime ex, eligendi molestiae numquam, odio dolores quas deleniti, natus voluptatum voluptates ab minus ipsum delectus impedit unde laborum.
-        Quo, qui! Aut deleniti unde, totam <br>praesentium quae quas ducimus explicabo, voluptatem dolorum animi nisi sed tempora pariatur? Numquam facilis perferendis facere minus blanditiis ratione modi ex aspernatur! Deserunt, distinctio.
-        Tempora a cum accusamus, perferendis non nihil provident beatae facilis rerum nisi aut cumque ducimus nesciunt corporis laborum magni hic totam illo maiores reiciendis consequatur quos amet placeat sit! Quae.
-        Veritatis aperiam rem laboriosam. Animi nihil in quisquam ab distinctio? Magnam voluptates id doloribus consectetur ullam perspiciatis est laboriosam, consequuntur officiis asperiores praesentium quae obcaecati repudiandae mollitia doloremque nam voluptas?
-        Voluptatem minus ipsum fuga facere eveniet aliquam aut vel odit consequuntur obcaecati distinctio dolore animi illo quia quae ipsam harum asperiores repellendus blanditiis rerum vero enim ex, deserunt nostrum. Provident.
-        Similique esse unde, hic nihil, iste dolorum voluptatum tempore vero molestias quod debitis blanditiis accusantium cum inventore rerum facilis, aut laboriosam deserunt nemo. Laboriosam at numquam dolorem porro! Quisquam, vitae.
-        Maiores illo totam maxime laudantium tempore recusandae quasi quidem voluptatem obcaecati, facilis laboriosam earum hic omnis iusto dolore asperiores voluptate porro. Deserunt provident eius alias a. Eum obcaecati officiis nemo.
-        Hic quis quod eligendi doloremque sunt tenetur natus enim nobis aliquid sit? Nisi aliquid, facere quidem debitis cumque autem! Cumque tempore fugiat recusandae repellat distinctio quae rerum eum, mollitia repellendus.
-        Quae, enim nobis quos harum eum nemo temporibus saepe. Necessitatibus consequatur, ut repellat nulla molestias accusantium in sit voluptates est commodi ab laborum dolor quas similique iusto provident dolorem temporibus!</p>
+        main section.active {
+            display: block;
+        }
+    </style>
+    <script>
       
-   </div>
-   <div id="botones">
-      
-
-
-
-   </div>
+        function toggleSection(sectionId) {
        
+            var sections = document.querySelectorAll('main section');
+            sections.forEach(function (section) {
+                section.classList.remove('active');
+            });
+   
+            var section = document.getElementById(sectionId);
+            section.classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>ParaOlimpicos</h1>
+        <nav>
+            <ul id="container">
+                <li><a href="#bienvenida" onclick="toggleSection('bienvenida')">Inicio</a></li>
+                <li><a href="#quienes-somos" onclick="toggleSection('quienes-somos')">Quienes Somos</a></li>
+                <li><a href="#competencias" onclick="toggleSection('competencias')">Nuestras Competencias</a></li>
+                <li><a href="#visitanos" onclick="toggleSection('visitanos')">Visítanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <main>
+            <section id="bienvenida" class="active">
+                <div class="content">
+                    <h2>Bienvenido a ParaOlimpicos</h2>
+                    <p>¡Bienvenido a ParaOlimpicos! Somos una comunidad apasionada por el deporte inclusivo y la celebración del espíritu humano. Explora nuestras secciones para descubrir más sobre quiénes somos, nuestras competencias y cómo puedes visitarnos.</p>
+                </div>
+            </section>
+
+            <section id="quienes-somos">
+                <div class="content">
+                    <h2>Paraolímpicos</h2>
+                    <p>Los Juegos Paralímpicos son una competición internacional de deportes para atletas con discapacidad. Estos juegos se realizan después de los Juegos Olímpicos y comparten el mismo espíritu de excelencia, determinación y coraje.</p>
+                    <p>Los Paraolímpicos incluyen una amplia gama de deportes, desde atletismo y natación hasta esquí alpino y baloncesto en silla de ruedas. Los atletas paraolímpicos demuestran habilidades sobresalientes y superan desafíos extraordinarios para competir en este escenario global.</p>
+                    <p>Los Juegos Paralímpicos tienen como objetivo promover la inclusión, la igualdad y el respeto por la diversidad, celebrando el potencial humano en todas sus formas.</p>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+
+    <footer>
+        <p></p>
+        <div class="redes-sociales">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
 </body>
+
 </html>
