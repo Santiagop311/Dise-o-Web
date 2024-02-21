@@ -1,0 +1,68 @@
+*{
+    margin: 0; /*margenes*/
+    padding: 0; /*espacio interno*/
+}
+body{
+    overflow-x: hidden ; /*oculta el slider en x*/
+    
+}
+#nombreEmpresa{
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    
+}#nombreEmpresa #nomEmpresa{
+    
+   
+    margin-left: 2em;
+}#nombreEmpresa #enlacesEmpresa{
+   
+    
+    position: absolute;
+    right: 30px;
+    top: 0;
+    
+}#nombreEmpresa #nombreEmpresa h1{
+    font-size: 1.5em;
+    margin-top: 12px ; /*baja el elemento a 12 px desde su posicion*/
+    font-weight: bold; /*pone el texto en negrita*/
+}#nombreEmpresa #enlacesEmpresa ul{
+    list-style: none;
+
+}#nombreEmpresa #enlacesEmpresa ul li{
+    display: inline-block; /*convierte los li (items) en un bloque linea*/
+    margin-left: 10px;
+    margin-top: 12px ;
+}#nombreEmpresa #enlacesEmpresa ul li a{
+    text-decoration: none;/*quita el subrayado delos links*/
+    font-size: 1.5em;
+}
+   
+
+#contenedoredesociales{
+    background-color: blue;
+    
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+#parrafo p{ 
+
+    text-align: center;
+    direction: rtl;
+    
+}
+.container{ 
+   display:flex;
+   align-items: center;
+}
+.container img{
+    max-width: 400px;
+    height: 400px;
+    margin-right: 10px;
+}
