@@ -3,6 +3,7 @@ html{
 height: 100%;
 margin: 0;
 padding: 0;
+background-color: ;
 }
 
 main section {
@@ -16,6 +17,7 @@ main section.active {
 
 .main-container {
 min-height: 100%;
+background-color: ;
 
 }
 body {
@@ -25,7 +27,7 @@ body {
 }
 
 header {
-    background-color: #76a9ce;
+    background-color: #a2c4dc;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -35,6 +37,7 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    box-shadow: 0 0 10px rgba(35, 36, 36, 0.196);
 }
 
 nav ul li {
