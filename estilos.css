@@ -17,38 +17,49 @@ main section.active {
 
 .main-container {
 min-height: 100%;
-background-color: ;
+
 
 }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #c4baba;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
-    background-color: #a2c4dc;
+    background-color: #94999c;
     color: #fff;
     padding: 20px;
     text-align: center;
+    
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 nav ul {
     padding: 0;
-    margin: 0;
-    list-style-type: none;
+    margin: 0px;
+    list-style-type: decimal;
     box-shadow: 0 0 10px rgba(35, 36, 36, 0.196);
+    background-color: #6a7172d5;
+    
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+    
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #110e0e;
+    text-decoration:wavy;
     font-weight: bold;
+    background-color: ;
 }
 
 nav ul li a:hover {
@@ -56,7 +67,8 @@ nav ul li a:hover {
 }
 
 .main-container {
-    display: flex;
+    display:flex;
+    position: relative;
     flex-wrap: wrap;
     justify-content: center; 
     gap: 20px;
@@ -88,7 +100,38 @@ main {
     background-color: #eef0f1;
     
 }
+.entretenimiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #eef0f1;
 
+}
+.adios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #eef0f1;
+}
+
+.hola{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #eef0f1;
+    justify-content: space-between;
+    position: absolute; left: 0;
+    margin-left: 50px;
+}
 .content img {
     width: 100%;
     max-width: 200px; 
@@ -116,7 +159,7 @@ main {
 }
 
 footer {
-    background-color: #76a9ce;
+    background-color:  #6b7379;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -146,10 +189,12 @@ footer {
     margin-bottom: 20px; 
     margin-right: 20px;
 }
-.entretener {
+.entretenimiento {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: absolute; right: 0;
+    margin-right: 50px;
 }
 
 .testimonials,
@@ -174,16 +219,7 @@ footer {
     display: inline-block;
     
 }
-.entretenimiento{
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #eef0f1;
-    
-}
+
 .entretenimiento img{
     height: 200px;
     
